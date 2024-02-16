@@ -62,7 +62,7 @@ public class HomeController {
     //    @GetMapping("/")
     public String homeLoginV3(HttpServletRequest request, Model model) {
 
-        HttpSession session = request.getSession(false);    // 세션은 데이터를 사용하기 때문에 남용X
+        HttpSession session = request.getSession(false);    // 세션은 메모리를 사용하기 때문에 남용X
         if (session == null) {
             return "home";
         }
